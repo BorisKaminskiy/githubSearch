@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate } from "react-router"
-import Layout from "../pages/Layout"
-import Main from "../pages/Main/Main"
-import Items from "../pages/Items/Items"
-import Project from "../pages/Project/Project"
+import Layout from '~/pages/Layout'
+import Main from '~/pages/Main/Main'
+import Items from '~/pages/Items/Items'
+import Project from '~/pages/Project/Project'
 
 const AppRoutes = () => {
   return (

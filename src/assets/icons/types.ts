@@ -1,4 +1,4 @@
-import {DetailedHTMLProps, HTMLAttributes } from "react";
+import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export interface ISvgProps
 extends DetailedHTMLProps<HTMLAttributes<SVGSVGElement>, SVGSVGElement> {

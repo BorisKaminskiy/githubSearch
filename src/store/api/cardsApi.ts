@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { mainUrl, endpoints } from './endpoints';
-import { ICardResults, ICardRequest } from '../../types/card';
+import { ICardResults, ICardRequest } from '~/types/card';
 
 
 export const cardsApi = createApi({

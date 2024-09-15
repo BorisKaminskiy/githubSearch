@@ -1,7 +1,7 @@
 import { FC, DetailedHTMLProps, HTMLAttributes, useState } from "react"
-import { IDropdownItem } from "../../types/dropdown"
-import { Typography, ButtonIcon } from "../../ui"
-import { ArrowIcon } from "../../assets/icons"
+import { IDropdownItem } from '~/types/dropdown'
+import { Typography, ButtonIcon } from '~/ui'
+import { ArrowIcon } from '~/assets/icons'
 import cn from "classnames"
 import styles from "./Dropdown.module.scss"
 

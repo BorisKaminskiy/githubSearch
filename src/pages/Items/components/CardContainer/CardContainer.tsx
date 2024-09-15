@@ -1,9 +1,8 @@
 import { FC, DetailedHTMLProps, HTMLAttributes } from "react"
 import { useNavigate } from "react-router"
-import { normalizeCardShortData } from "../../../../utils/normalizeCardShortData"
-import { ICardResults } from '../../../../types/card'
-import { ICardFull } from "../../../../types/card"
-import Card from "../../../../components/Card/Card"
+import { normalizeCardShortData } from '~/utils/normalizeCardShortData'
+import { ICardResults, ICardFull } from '~/types/card'
+import Card from '~/components/Card/Card'
 import cn from "classnames"
 import styles from "./CardContainer.module.scss"
 

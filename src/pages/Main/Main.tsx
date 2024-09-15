@@ -1,20 +1,18 @@
 import { FC, useEffect } from "react"
-import { useAppSelector, useAppDispatch } from "../../store/store"
-import {
-  setLanguage,
-  setPage,
-} from "../../store/slices/searchParams/searchParams"
-import { getSearchParams } from "../../store/slices/searchParams/selectors"
-import { generateSearchParams } from "../../utils/generateSearchParams"
-import { useGetCardsQuery } from "../../store/api/cardsApi"
-import { Outlet } from "react-router"
-import { IDropdownItem } from "../../types/dropdown"
-import { ISearchParams } from "../../types/searchParam"
+import { useAppDispatch, useAppSelector } from '~/store/store'
 import { useNavigate } from "react-router-dom"
+
+import { setLanguage, setPage } from '~/store/slices/searchParams/searchParams'
+import { getSearchParams } from '~/store/slices/searchParams/selectors'
+import { generateSearchParams } from '~/utils/generateSearchParams'
+import { useGetCardsQuery } from '~/store/api/cardsApi'
+import { Outlet } from "react-router"
+import { IDropdownItem } from '~/types/dropdown'
+import { ISearchParams } from '~/types/searchParam'
 import { languagesItems } from "./languagesItems"
-import Dropdown from "../../components/Dropdown/Dropdown"
-import { ButtonIcon, Spiner, Typography } from "../../ui"
-import { ArrowIcon } from "../../assets/icons"
+import Dropdown from '~/components/Dropdown/Dropdown'
+import { ButtonIcon, Spiner, Typography } from '~/ui'
+import { ArrowIcon } from '~/assets/icons'
 import cn from "classnames"
 import styles from "./Main.module.scss"
 

@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { ISearchParams } from '../../../types/searchParam';
+import { ISearchParams } from '~/types/searchParam';
 
 const initialState: ISearchParams = {
 	language: 'typescript',

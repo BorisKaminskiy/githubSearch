@@ -1,9 +1,8 @@
 import { FC, DetailedHTMLProps, HTMLAttributes } from "react"
-import { ButtonIcon } from "../../ui"
-import { ArrowIcon } from "../../assets/icons"
-import { Typography } from "../../ui"
 import { useNavigate, useLocation } from "react-router"
-import { ICardFull } from "../../types/card"
+import { ArrowIcon } from '~/assets/icons'
+import { ButtonIcon, Typography } from '~/ui'
+import { ICardFull } from '~/types/card'
 import cn from "classnames"
 import styles from "./Project.module.scss"
 

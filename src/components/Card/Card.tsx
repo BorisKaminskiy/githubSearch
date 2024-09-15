@@ -1,7 +1,7 @@
 import { FC, DetailedHTMLProps, HTMLAttributes } from "react"
-import { ICardShort } from "../../types/card"
-import { Typography } from "../../ui"
-import { StarIcon } from "../../assets/icons"
+import { ICardShort } from '~/types/card'
+import { Typography } from '~/ui'
+import { StarIcon } from '~/assets/icons'
 import cn from "classnames"
 import styles from "./Card.module.scss"
 
