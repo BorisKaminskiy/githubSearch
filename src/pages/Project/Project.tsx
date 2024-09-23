@@ -1,10 +1,10 @@
-import { FC, DetailedHTMLProps, HTMLAttributes } from "react"
-import { useNavigate, useLocation } from "react-router"
+import { FC, DetailedHTMLProps, HTMLAttributes } from 'react'
+import { useNavigate, useLocation } from 'react-router'
 import { ArrowIcon } from '~/assets/icons'
 import { ButtonIcon, Typography } from '~/ui'
 import { ICardFull } from '~/types/card'
-import cn from "classnames"
-import styles from "./Project.module.scss"
+import cn from 'classnames'
+import styles from './Project.module.scss'
 
 interface IProjectProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
@@ -16,7 +16,7 @@ const Project: FC<IProjectProps> = ({ ...props }) => {
   const navigate = useNavigate()
 
   const onBackClick = () => {
-    navigate("/")
+    navigate('/')
   }
 
   return (
@@ -34,7 +34,7 @@ const Project: FC<IProjectProps> = ({ ...props }) => {
         <div className={cn(styles.info)}>
           {Object.entries(data).map((item) => (
             <span>
-              {(typeof item[1] === "string" || typeof item[1] === "number") && (
+              {(typeof item[1] === 'string' || typeof item[1] === 'number') && (
                 <Typography variant="t14">
                   {item[0]}:{item[1]}
                 </Typography>

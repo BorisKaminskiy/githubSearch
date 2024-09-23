@@ -1,20 +1,20 @@
-import { FC, useEffect } from "react"
+import { FC, useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from '~/store/store'
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom'
 
 import { setLanguage, setPage } from '~/store/slices/searchParams/searchParams'
 import { getSearchParams } from '~/store/slices/searchParams/selectors'
 import { generateSearchParams } from '~/utils/generateSearchParams'
 import { useGetCardsQuery } from '~/store/api/cardsApi'
-import { Outlet } from "react-router"
+import { Outlet } from 'react-router'
 import { IDropdownItem } from '~/types/dropdown'
 import { ISearchParams } from '~/types/searchParam'
-import { languagesItems } from "./languagesItems"
+import { languagesItems } from './languagesItems'
 import Dropdown from '~/components/Dropdown/Dropdown'
 import { ButtonIcon, Spiner, Typography } from '~/ui'
 import { ArrowIcon } from '~/assets/icons'
-import cn from "classnames"
-import styles from "./Main.module.scss"
+import cn from 'classnames'
+import styles from './Main.module.scss'
 
 const Main: FC = ({ ...props }) => {
   const searchParams = useAppSelector(getSearchParams) as ISearchParams
@@ -30,10 +30,10 @@ const Main: FC = ({ ...props }) => {
     if (data)
       navigate(
         {
-          pathname: "/items",
+          pathname: '/items',
           search: generateSearchParams(searchParams),
         },
-        { state: data }
+        { state: data },
       )
   }, [searchParams, data])
 
@@ -77,9 +77,9 @@ const Main: FC = ({ ...props }) => {
             </div>
           </div>
         </div>
-      )
-        : <Typography variant='t30b'>Error</Typography>
-    }
+      ) : (
+        <Typography variant="t30b">Error</Typography>
+      )}
     </div>
   )
 }

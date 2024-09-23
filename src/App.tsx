@@ -5,7 +5,6 @@ import AppRoutes from './routes/AppRoutes'
 import { FC } from 'react'
 
 const App: FC = () => {
-  
   return (
     <Provider store={setupStore()}>
       <BrowserRouter>

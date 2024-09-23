@@ -1,4 +1,4 @@
-import { FC, DetailedHTMLProps, HTMLAttributes } from "react"
+import { FC, DetailedHTMLProps, HTMLAttributes, ReactElement } from "react"
 import cn from 'classnames'
 import styles from ""
 
@@ -7,7 +7,7 @@ interface I___Props
   name?: string
   }
 
-const ___: FC<I___> = ({ ...props }) => {
+const ___: FC<I___> = ({ ...props }): ReactElement => {
   return <div className={cn(styles.root)} {...props}></div>;
 };
 

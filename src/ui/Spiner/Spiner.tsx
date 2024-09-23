@@ -1,9 +1,9 @@
-import { FC } from "react"
-import { createPortal } from "react-dom"
-import cn from "classnames"
-import styles from "./Spiner.module.scss"
+import { FC } from 'react'
+import { createPortal } from 'react-dom'
+import cn from 'classnames'
+import styles from './Spiner.module.scss'
 
-const portal = document.getElementById("portal")
+const portal = document.getElementById('portal')
 
 const Spiner: FC = () => {
   return portal
@@ -11,7 +11,7 @@ const Spiner: FC = () => {
         <div className={cn(styles.portal)}>
           <div className={cn(styles.spiner)} />
         </div>,
-        portal
+        portal,
       )
     : null
 }

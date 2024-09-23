@@ -1,6 +1,6 @@
-import { FC, DetailedHTMLProps, HTMLAttributes, ReactNode } from "react"
-import cn from "classnames"
-import styles from "./ButtonIcon.module.scss"
+import { FC, DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react'
+import cn from 'classnames'
+import styles from './ButtonIcon.module.scss'
 
 interface IButtonIconProps
   extends DetailedHTMLProps<
@@ -8,7 +8,7 @@ interface IButtonIconProps
     HTMLButtonElement
   > {
   children: ReactNode
-  variant: "small" | "medium" | "large"
+  variant: 'small' | 'medium' | 'large'
   isRotate?: boolean
 }
 

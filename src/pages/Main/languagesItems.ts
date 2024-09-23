@@ -3,31 +3,26 @@ import { IDropdownItem } from '../../types/dropdown'
 export const languagesItems = [
   {
     id: 1,
-    title: "typescript",
-   
+    title: 'typescript',
   },
   {
     id: 2,
-    title: "javascript",
+    title: 'javascript',
   },
   {
     id: 3,
-    title: "java",
-   
+    title: 'java',
   },
   {
     id: 4,
-    title: "basic",
-   
+    title: 'basic',
   },
   {
     id: 5,
-    title: "kotlin",
-   
+    title: 'kotlin',
   },
   {
     id: 6,
-    title: "pascal",
-   
+    title: 'pascal',
   },
 ] as IDropdownItem[]

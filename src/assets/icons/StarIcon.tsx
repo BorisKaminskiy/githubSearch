@@ -1,5 +1,5 @@
-import { FC } from "react"
-import { ISvgProps } from "./types"
+import { FC } from 'react'
+import { ISvgProps } from './types'
 
 const StarIcon: FC<ISvgProps> = ({ ...props }) => {
   return (

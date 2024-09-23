@@ -1,5 +1,5 @@
-import { FC } from "react"
-import { ISvgProps } from "./types"
+import { FC } from 'react'
+import { ISvgProps } from './types'
 
 const AuthIcon: FC<ISvgProps> = ({ ...props }) => {
   return (
@@ -8,7 +8,7 @@ const AuthIcon: FC<ISvgProps> = ({ ...props }) => {
       width="50"
       height="50"
       fill="#000"
-      stroke='lightgray'
+      stroke="lightgray"
       {...props}
     >
       <svg

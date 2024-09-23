@@ -1,8 +1,8 @@
-import { FC, DetailedHTMLProps, HTMLAttributes } from "react"
-import { Header } from "./components"
-import { Outlet } from "react-router"
-import cn from "classnames"
-import styles from "./Layout.module.scss"
+import { FC, DetailedHTMLProps, HTMLAttributes } from 'react'
+import { Header } from './components'
+import { Outlet } from 'react-router'
+import cn from 'classnames'
+import styles from './Layout.module.scss'
 
 interface ILayoutProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
