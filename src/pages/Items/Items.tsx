@@ -1,8 +1,6 @@
 import { FC, DetailedHTMLProps, HTMLAttributes } from 'react'
-import { useLocation } from 'react-router'
-import CardContainer from './components/CardContainer/CardContainer'
-import cn from 'classnames'
-import styles from './Items.module.scss'
+import { CardContainer } from './components'
+
 
 interface IItemsProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
@@ -10,12 +8,12 @@ interface IItemsProps
 }
 
 const Items: FC<IItemsProps> = ({ ...props }) => {
-  const data = useLocation().state
+	
 
   return (
-    <div className={cn(styles.root)} {...props}>
-      <CardContainer data={data} />
-    </div>
+    <>
+			<CardContainer {...props} />
+    </>
   )
 }
 

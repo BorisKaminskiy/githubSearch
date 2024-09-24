@@ -4,7 +4,11 @@ import { ICardResults, ICardRequest } from '~/types/card'
 
 export const cardsApi = createApi({
   reducerPath: 'cardsApi',
-  baseQuery: fetchBaseQuery({ baseUrl: mainUrl }),
+
+  baseQuery: fetchBaseQuery({
+    baseUrl: mainUrl,
+  }),
+
   tagTypes: ['cards'],
   endpoints: (build) => ({
     getCards: build.query<ICardResults, ICardRequest>({

@@ -9,7 +9,7 @@ const AppRoutes = () => {
     <Routes>
       <Route path="" element={<Layout />}>
         <Route path="/" element={<Main />}>
-          <Route path="items" element={<Items />} />
+          <Route index element={<Items />} />
         </Route>
         <Route path="project/:id" element={<Project />} />
         <Route path="*" element={<Navigate to={'/'} />} />

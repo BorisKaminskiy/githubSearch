@@ -16,7 +16,7 @@ const Project: FC<IProjectProps> = ({ ...props }) => {
   const navigate = useNavigate()
 
   const onBackClick = () => {
-    navigate('/')
+    navigate('/items')
   }
 
   return (
@@ -32,8 +32,8 @@ const Project: FC<IProjectProps> = ({ ...props }) => {
       <div className={cn(styles.container)}>
         <Typography variant="t24b">Id {data.id}</Typography>
         <div className={cn(styles.info)}>
-          {Object.entries(data).map((item) => (
-            <span>
+          {Object.entries(data).map((item, index) => (
+            <span key={index}>
               {(typeof item[1] === 'string' || typeof item[1] === 'number') && (
                 <Typography variant="t14">
                   {item[0]}:{item[1]}
